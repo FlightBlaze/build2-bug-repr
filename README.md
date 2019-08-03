@@ -1,4 +1,4 @@
-# This reproduction of build2's heuristics bug
+# The reproduction of build2's heuristics bug
 
 Just build it!
 ```

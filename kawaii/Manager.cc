@@ -1,7 +1,7 @@
 #include <vector>
 
 export module kawaii.Manager;
-export import kawaii.WindowImpl;
+export import kawaii.Window;
 
 export namespace kawaii {
     

@@ -1,0 +1,10 @@
+: 1
+name: kawaii
+version: 0.1.0
+summary: Stylish compoziting window manager for Wayland.
+license: MIT
+description-file: README.md
+url: https://github.com/FlightBlaze/kawaii
+email: flightblaze@gmail.com
+depends: * build2 >= 0.10.0
+depends: * bpkg >= 0.10.0

@@ -1,0 +1,78 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x0c\x00k\x00a\x00w\x00a\x00i\x00i)
+
+[CustomBuildSystem]
+CurrentConfiguration=BuildConfig0
+
+[CustomBuildSystem][BuildConfig0]
+BuildDir=
+Title=build2
+
+[CustomBuildSystem][BuildConfig0][ToolBuild]
+Arguments=
+Enabled=true
+Environment=
+Executable=file:b
+Type=0
+
+[CustomBuildSystem][BuildConfig0][ToolClean]
+Arguments=
+Enabled=false
+Environment=
+Executable=
+Type=3
+
+[CustomBuildSystem][BuildConfig0][ToolConfigure]
+Arguments=init -C ../kawaii-clang cc config.cxx=clang++
+Enabled=true
+Environment=
+Executable=file:bdep
+Type=1
+
+[CustomBuildSystem][BuildConfig0][ToolInstall]
+Arguments=
+Enabled=false
+Environment=
+Executable=
+Type=2
+
+[CustomBuildSystem][BuildConfig0][ToolPrune]
+Arguments=
+Enabled=false
+Environment=
+Executable=
+Type=4
+
+[CustomDefinesAndIncludes][ProjectPath0]
+Path=.
+parseAmbiguousAsCPP=true
+parserArguments=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++1z
+parserArgumentsC=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c99
+parserArgumentsCuda=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++14
+parserArgumentsOpenCL=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -cl-std=CL1.1
+
+[CustomDefinesAndIncludes][ProjectPath0][Compiler]
+Name=Clang
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=scriptAppLauncher
+Name=run.sh
+Type=Script Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+EnvironmentGroup=
+Executable=file:///home/blaze/kawaii/run.sh
+Execute on Remote Host=false
+Interpreter=bash
+Output Filtering Mode=2
+Remote Host=
+Run current file=false
+Working Directory=
+
+[Project]
+VersionControlSupport=kdevgit

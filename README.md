@@ -2,7 +2,7 @@
 
 Just build it!
 ```
-git clone ssh://github.com/FlightBlaze/build2-bug-repr.git
+git clone https://github.com/FlightBlaze/build2-bug-repr.git
 cd build2-bug-repr
-bdep init -C ..\bug-build-clang cc config.cxx=clang++
+bdep init -C ../bug-build-clang cc config.cxx=clang++
 ```

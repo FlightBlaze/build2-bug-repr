@@ -1,0 +1,9 @@
+libs =
+
+cxx.libs += -lwayland-server
+cxx.libs += -lvulkan
+cxx.libs += -lglfw
+
+exe{kawaii}: {mxx cxx}{*} $libs
+
+cxx.poptions =+ "-I$out_root" "-I$src_root"
